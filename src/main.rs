@@ -126,18 +126,4 @@ fn main() {
             println!(", {name}={state}");
         }
     }
-
-    // create the start/end positions (at end position look until next newline)
-
-    // use rayon to do a parrallel iteration over the chunks
 }
-
-// let mut line_start = 0;
-
-// for (i, &byte) in slice.iter().enumerate() {
-//     if byte == b'\n' {
-//         let line = &slice[line_start..i];
-//         *hashmap.entry(line.to_vec()).or_insert(0) += 1;
-//         line_start = i + 1; // Move to the start of the next line
-//     }
-// }
